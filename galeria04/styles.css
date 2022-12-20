@@ -13,6 +13,21 @@ h1 {
     text-align: center;
 }
 
+/*texto del rotulo vertical*/
+.gallery__item{
+    text-align: center;
+    
+}
+h1{
+    margin-top: 60px;
+}
+hr{
+    border-top: 0 ;
+    width: 85%;
+}
+
+
+
 /*Estilos de la galeria*/
 
 .gallery-container {
