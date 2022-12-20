@@ -17,8 +17,8 @@ h1 {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/*repetir 3 columnas y que cada uno tenga la misma fraccion*/ 
-    grid-auto-rows: 750px; /*para definir el alto de las filas*/
+    grid-template-columns: .5fr 1fr 1fr;/*repetir 3 columnas y que cada uno tenga la misma fraccion*/ 
+    grid-auto-rows: 450px; /*para definir el alto de las filas*/
     padding: 20px;
     grid-gap: 10px;/*espacio entre las fotos*/
    
@@ -32,15 +32,25 @@ h1 {
 
 /*el contenedor de cada imagen elijo el 4*/
 .gallery__item:nth-child(1){
-    grid-column-start: span 3; /* con esto hago que la imagen ocupe 2 espacios*/
+    grid-column-start: span 1; /* con esto hago que la imagen ocupe 2 espacios de columnas horizontalmente*/
+    grid-row-start: span 4;
+}
+
+.gallery__item:nth-child(2){
+    grid-column-start: span 2 ;
+}
+
+.gallery__item:nth-child(3){ /* con esto es lo mismo pero verticalmente ocupando espacios de filas*/
+    grid-row-end: span 1;
 }
 
 
 
 
-@media (max-width: 2000px){
+
+/* @media (max-width: 2000px){
     .gallery-container{
         grid-template-columns: repeat(1, 1fr);
         transition: 2s;
     }
-}
+} */
