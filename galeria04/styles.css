@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+}
+
